@@ -1,6 +1,6 @@
 # 🍭 Sweet Shop Management System
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/prakash182/TDD-Kata-Sweet-Shop-Management-System)
 [![Node.js](https://img.shields.io/badge/Node.js-v22.12.0-green)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-blue)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://www.typescriptlang.org/)
@@ -11,7 +11,7 @@ A comprehensive full-stack web application for managing a sweet shop, built usin
 
 ## 🌐 Public Repository
 
-**GitHub Repository:** [https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System](https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System)
+**GitHub Repository:** [https://github.com/prakash182/TDD-Kata-Sweet-Shop-Management-System](https://github.com/prakash182/TDD-Kata-Sweet-Shop-Management-System)
 
 ## 📖 Project Overview
 
@@ -108,7 +108,7 @@ const generateAIImageURL = (productName) => {
 
 #### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/Sivakanithi/TDD-Kata-Sweet-Shop-Management-System.git
+git clone [https://github.com/prakash182/TDD-Kata-Sweet-Shop-Management-System.git]
 cd TDD-Kata-Sweet-Shop-Management-System
 ```
 
@@ -192,40 +192,9 @@ The application comes with pre-configured test users:
 
 The Sweet Shop Management System features a modern, responsive interface with AI-generated product images. Below are comprehensive screenshots showcasing all key features:
 
-### 1. Login Page
-Clean, modern authentication interface with gradient backgrounds and sweet shop branding.
+The Sweet Shop Management System features a modern, responsive interface with AI-generated product images.
 
-![Login Page](screenshots/Screenshot%202025-09-19%20012311.png)
-
-### 2. User Registration  
-User-friendly registration form with validation and password strength indicators.
-
-![Registration Page](screenshots/Screenshot%202025-09-19%20012441.png)
-
-### 3. Admin Dashboard
-Administrative dashboard overview with complete sweet inventory management and analytics.
-
-![Admin Dashboard](screenshots/Screenshot%202025-09-19%20012516.png)
-
-### 4. Admin Panel - Add/Delete Items
-Admin interface for adding new products and deleting existing items with full CRUD operations.
-
-![Admin Panel for Items](screenshots/Screenshot%202025-09-19%20012544.png)
-
-### 5. Admin Panel - Inventory Management
-Comprehensive admin interface for managing sweet inventory with full CRUD operations.
-
-![Admin Panel](screenshots/Screenshot%202025-09-19%20012625.png)
-
-### 6. User Dashboard - Sweet Catalog
-User browsing experience with AI-generated product images, pricing, and add to cart functionality.
-
-![User Dashboard](screenshots/Screenshot%202025-09-19%20012652.png)
-
-### 7. User Dashboard - Stock Reduction
-User dashboard showing real-time stock reduction when items are added to cart, demonstrating inventory updates.
-
-![User Dashboard Stock Update](screenshots/Screenshot%202025-09-19%20012720.png)
+Note: Screenshots are available in the /screenshots directory of this repository.
 
 ### Key Visual Features Demonstrated:
 - ✨ **AI-Generated Images**: Every product has unique AI-created visuals
@@ -331,9 +300,11 @@ TDD-Kata-Sweet-Shop-Management-System/
 ├── 📁 backend/                     # Node.js/Express API Server
 │   ├── 📁 models/                  # Mongoose data models
 │   │   ├── Sweet.js               # Sweet product model
-│   │   └── User.js                # User authentication model
+│   │   ├── User.js                # User authentication model
+│   │   └── Cart.js                # Cart authentication model
 │   ├── 📁 routes/                  # API route handlers
 │   │   ├── auth.js                # Authentication endpoints
+│   │   ├── cart.js                # Cart management endpoints
 │   │   └── sweets.js              # Sweet management endpoints
 │   ├── 📁 middleware/              # Express middleware
 │   │   └── auth.js                # JWT authentication middleware
@@ -359,10 +330,15 @@ TDD-Kata-Sweet-Shop-Management-System/
 │   │   │   │   └── Dashboard.tsx  # Sweet catalog dashboard
 │   │   │   ├── 📁 admin/          # Admin panel components
 │   │   │   │   └── AdminPanel.tsx # Admin management interface
+│   │   │   ├── 📁 cart/           # Authentication components
+│   │   │   │   ├── CartPage.tsx    # Cart Page component
+│   │   │   │   └── PaymentPage.tsx # Payment Page component
 │   │   │   └── 📁 layout/         # Layout components
 │   │   │       └── Navbar.tsx     # Navigation component
 │   │   ├── 📁 context/             # React Context providers
-│   │   │   └── AuthContext.tsx    # Authentication state management
+│   │   │   |── AuthContext.tsx    # Authentication state management
+│   │   │   └── CartContext.tsx    # Cart state management
+│   │   ├── 📁 pages/             # React Context providers
 │   │   ├── App.tsx                # Main application component
 │   │   ├── index.tsx              # Application entry point
 │   │   └── index.css              # Global styles
